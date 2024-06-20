@@ -1,9 +1,6 @@
 # SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation
 
-<center>
-  <a href="https://spreadsheetbench.github.io/" title="">Homepage</a>
-    · Paper · Data
-</center>
+[Homepage](https://spreadsheetbench.github.io/) · Paper · Data
 
 ![overview](images/pipeline.png "The benchmark construction pipeline and OJ-style evaluation of SpreadsheetBench.")
 
