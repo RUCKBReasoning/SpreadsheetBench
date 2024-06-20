@@ -1,0 +1,71 @@
+Version,Codename,Edition,Code Base,Compatible repository,Default desktop environment,Release date
+"Old version, no longer supported: 1.0",Ada,Main,Kubuntu 6.06,Kubuntu 6.06,KDE,27 August 2006
+"Old version, no longer supported: 2.0",Barbara,Main,Ubuntu 6.10,Ubuntu 6.10,GNOME,13 November 2006
+"Old version, no longer supported: 2.1",Bea,Main,Ubuntu 6.10,Ubuntu 6.10,GNOME,20 December 2006
+"Old version, no longer supported: 2.2",Bianca,Main,Ubuntu 6.10,Ubuntu 6.10,GNOME,20 February 2007
+"Old version, no longer supported: 2.2",Bianca,Light,Ubuntu 6.10,Ubuntu 6.10,GNOME,29 March 2007
+"Old version, no longer supported: 2.2",Bianca,KDE CE,Kubuntu 6.10,Kubuntu 6.10,KDE,20 April 2007
+"Old version, no longer supported: 3.0",Cassandra,Main,Bianca 2.2,Ubuntu 7.04,GNOME,30 May 2007
+"Old version, no longer supported: 3.0",Cassandra,Light,Bianca 2.2,Ubuntu 7.04,GNOME,15 June 2007
+"Old version, no longer supported: 3.0",Cassandra,KDE CE,Bianca 2.2,Kubuntu 7.04,KDE,14 August 2007
+"Old version, no longer supported: 3.0",Cassandra,MiniKDE CE,Bianca 2.2,Kubuntu 7.04,KDE,14 August 2007
+"Old version, no longer supported: 3.0",Cassandra,Xfce CE,Cassandra 3.0,Xubuntu 7.04,Xfce,7 August 2007
+"Old version, no longer supported: 3.1",Celena,Main,Bianca 2.2,Ubuntu 7.04,GNOME,24 September 2007
+"Old version, no longer supported: 3.1",Celena,Light,Bianca 2.2,Ubuntu 7.04,GNOME,1 October 2007
+"Old version, no longer supported: 4.0",Daryna,Main,Celena 3.1,Ubuntu 7.10,GNOME,15 October 2007
+"Old version, no longer supported: 4.0",Daryna,Light,Celena 3.1,Ubuntu 7.10,GNOME,15 October 2007
+"Old version, no longer supported: 4.0",Daryna,KDE CE,Cassandra 3.0,Kubuntu 7.10,KDE,3 March 2008
+"Old version, no longer supported: 5",Elyssa,Main,Daryna 4.0,Ubuntu 8.04,GNOME,8 June 2008
+"Old version, no longer supported: 5",Elyssa,Light,Daryna 4.0,Ubuntu 8.04,GNOME,8 June 2008
+"Old version, no longer supported: 5",Elyssa,x64,Ubuntu 8.04,Ubuntu 8.04,GNOME,18 October 2008
+"Old version, no longer supported: 5",Elyssa,KDE CE,Daryna 4.0,Kubuntu 8.04,KDE,15 September 2008
+"Old version, no longer supported: 5",Elyssa,Xfce CE,Daryna 4.0,Xubuntu 8.04,Xfce,8 September 2008
+"Old version, no longer supported: 5",Elyssa,Fluxbox CE,Ubuntu 8.04,Ubuntu 8.04,Fluxbox,21 October 2008
+"Old version, no longer supported: 6",Felicia,Main,Ubuntu 8.10,Ubuntu 8.10,GNOME,15 December 2008
+"Old version, no longer supported: 6",Felicia,Universal (Light),Ubuntu 8.10,Ubuntu 8.10,GNOME,15 December 2008
+"Old version, no longer supported: 6",Felicia,x64,Ubuntu 8.10,Ubuntu 8.10,GNOME,6 February 2009
+"Old version, no longer supported: 6",Felicia,KDE CE,Elyssa 5,Kubuntu 8.10,KDE,8 April 2009
+"Old version, no longer supported: 6",Felicia,Xfce CE,Xubuntu 8.10,Xubuntu 8.10,Xfce,24 February 2009
+"Old version, no longer supported: 6",Felicia,Fluxbox CE,Xubuntu 8.10,Ubuntu 8.10,Fluxbox,7 April 2009
+"Old version, no longer supported: 7",Gloria,Main,Ubuntu 9.04,Ubuntu 9.04,GNOME,26 May 2009
+"Old version, no longer supported: 7",Gloria,Universal (Light),Ubuntu 9.04,Ubuntu 9.04,GNOME,26 May 2009
+"Old version, no longer supported: 7",Gloria,x64,Ubuntu 9.04,Ubuntu 9.04,GNOME,24 June 2009
+"Old version, no longer supported: 7",Gloria,KDE CE,Kubuntu 9.04,Kubuntu 9.04,KDE,3 August 2009
+"Old version, no longer supported: 7",Gloria,Xfce CE,Xubuntu 9.04,Xubuntu 9.04,Xfce,13 September 2009
+"Old version, no longer supported: 8",Helena,Main,Ubuntu 9.10,Ubuntu 9.10,GNOME,28 November 2009
+"Old version, no longer supported: 8",Helena,Universal (Light),Ubuntu 9.10,Ubuntu 9.10,GNOME,28 November 2009
+"Old version, no longer supported: 8",Helena,Gnome x64,Ubuntu 9.10,Ubuntu 9.10,GNOME,14 December 2009
+"Old version, no longer supported: 8",Helena,KDE,Kubuntu 9.10,Kubuntu 9.10,KDE,6 February 2010
+"Old version, no longer supported: 8",Helena,KDE x64,Kubuntu 9.10,Kubuntu 9.10,KDE,12 February 2010
+"Old version, no longer supported: 8",Helena,Fluxbox,Helena Main,Ubuntu 9.10,Fluxbox,12 February 2010
+"Old version, no longer supported: 8",Helena,Xfce,Xubuntu 9.10,Xubuntu 9.10,Xfce,31 March 2010
+"Old version, no longer supported: 8",Helena,LXDE,Helena Main,Ubuntu 9.10,LXDE,31 March 2010
+"Old version, no longer supported: 9",Isadora,Main,Ubuntu 10.04,Ubuntu 10.04,GNOME,18 May 2010
+"Old version, no longer supported: 9",Isadora,Gnome x64,Ubuntu 10.04,Ubuntu 10.04,GNOME,18 May 2010
+"Old version, no longer supported: 9",Isadora,LXDE,Lubuntu 10.04,Lubuntu 10.04,LXDE,18 July 2010
+"Old version, no longer supported: 9",Isadora,KDE,Kubuntu 10.04,Kubuntu 10.04,KDE,27 July 2010
+"Old version, no longer supported: 9",Isadora,KDE x64,Kubuntu 10.04,Kubuntu 10.04,KDE,27 July 2010
+"Old version, no longer supported: 9",Isadora,Xfce,Xubuntu 10.04,Xubuntu 10.04,Xfce,24 August 2010
+"Old version, no longer supported: 9",Isadora,Fluxbox,Lubuntu 10.04,Lubuntu 10.04,Fluxbox,6 September 2010
+"Old version, no longer supported: 10",Julia,Main,Ubuntu 10.10,Ubuntu 10.10,GNOME,12 November 2010
+"Old version, no longer supported: 10",Julia,Gnome x64,Ubuntu 10.10,Ubuntu 10.10,GNOME,12 November 2010
+"Old version, no longer supported: 10",Julia,KDE,Kubuntu 10.10,Kubuntu 10.10,KDE,23 February 2011
+"Old version, no longer supported: 10",Julia,KDE x64,Kubuntu 10.10,Kubuntu 10.10,KDE,23 February 2011
+"Old version, no longer supported: 10",Julia,LXDE,Lubuntu 10.10,Lubuntu 10.10,LXDE,16 March 2011
+"Old version, no longer supported: 11",Katya,Main,Ubuntu 11.04,Ubuntu 11.04,GNOME,26 May 2011
+"Old version, no longer supported: 11",Katya,Gnome x64,Ubuntu 11.04,Ubuntu 11.04,GNOME,26 May 2011
+"Old version, no longer supported: 11",Katya,LXDE,Lubuntu 11.04,Lubuntu 11.04,LXDE,16 August 2011
+"Old version, no longer supported: 12",Lisa,Main,Ubuntu 11.10,Ubuntu 11.10,"GNOME 3 with MGSE**, MATE*",26 November 2011
+"Old version, no longer supported: 12",Lisa,KDE,Kubuntu 11.10,Kubuntu 11.10,KDE,2 February 2012
+"Old version, no longer supported: 12",Lisa,LXDE,Lubuntu 11.10,Lubuntu 11.10,LXDE,9 March 2012
+"Older version, yet still supported: 13",Maya,Main,Ubuntu 12.04,Ubuntu 12.04,"Cinnamon***, MATE*",22 May 2012
+"Older version, yet still supported: 13",Maya,Xfce,Xubuntu 12.04,Xubuntu 12.04,Xfce,21 July 2012
+"Older version, yet still supported: 13",Maya,KDE,Kubuntu 12.04,Kubuntu 12.04,KDE,23 July 2012
+"Older version, yet still supported: 14",Nadia,Main,Ubuntu 12.10,Ubuntu 12.10,"Cinnamon***, MATE*",20 November 2012
+"Older version, yet still supported: 14",Nadia,Xfce,Xubuntu 12.10,Xubuntu 12.10,Xfce,21 December 2012
+"Older version, yet still supported: 14",Nadia,KDE,Kubuntu 12.10,Kubuntu 12.10,KDE,23 December 2012
+Current stable version: 15,Olivia,Main,Ubuntu 13.04,Ubuntu 13.04,"Cinnamon***, MATE*",29 May 2013
+Current stable version: 15,Olivia,Xfce,Ubuntu 13.04,Ubuntu 13.04,Xfce,12 July 2013
+Current stable version: 15,Olivia,KDE,Ubuntu 13.04,Ubuntu 13.04,KDE,21 July 2013
+Future release: 16,Petra,Main,Ubuntu 13.10,Ubuntu 13.10,"Cinnamon***, MATE*",end of November 2013
+Future release: 16,Petra,Xfce,Ubuntu 13.10,Ubuntu 13.10,Xfce,end of November 2013
