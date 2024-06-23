@@ -8,7 +8,7 @@ SpreadsheetBench is a challenging spreadsheet manipulation benchmark that (1) co
 
 ## News
 
-[2024/06] 🔥 We released the evaluation toolkit of SpreadsheetBench.
+[2024/06] 🔥 We released the code for model inference and evaluation.
 
 [2024/06] 📊 We released the sample data of SpreadsheetBench.
 
