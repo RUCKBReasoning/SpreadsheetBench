@@ -133,6 +133,15 @@ You need to modify the setting (single, multi_react_exec, multi_row_exec, or mul
 
 We thanks the [code-act](https://github.com/xingyaoww/code-act) team for providing the code execution environment.
 
-## Lisence
+## Lisence and Citation
 
 The project is hosted with the [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) License.
+
+```
+@article{ma2024spreadsheetbench,
+  title={SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation},
+  author={Ma, Zeyao and Zhang, Bohan and Zhang, Jing and Yu, Jifan and Zhang, Xiaokang and Zhang, Xiaohan and Luo, Sijia and Wang, Xi and Tang, Jie},
+  journal={arXiv preprint arXiv:2406.14991},
+  year={2024}
+}
+```
