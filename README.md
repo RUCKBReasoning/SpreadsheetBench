@@ -145,3 +145,7 @@ The project is hosted with the [CC BY SA 4.0](https://creativecommons.org/licens
   year={2024}
 }
 ```
+
+## Contact
+
+If you have any questions, we encourage you to either create Github issues or get in touch with us at <zeyaoma@ruc.edu.cn> or <zbhmint@bit.edu.cn>.
