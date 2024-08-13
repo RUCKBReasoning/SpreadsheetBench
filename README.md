@@ -146,6 +146,6 @@ The project is hosted with the [CC BY SA 4.0](https://creativecommons.org/licens
 }
 ```
 
-## Contact
+## Maintenance
 
-If you have any questions, we encourage you to either create Github issues or get in touch with us at <zeyaoma@ruc.edu.cn> or <zbhmint@bit.edu.cn>.
+RUC KBReasoning group will maintain this benchmark in the long term. We will continue to update the benchmark to fix labelling errors, instructions, or other necessary modifications, and all data will be versioned. We also welcome all contributors interested in our benchmark. If you have any questions or want to extend/augment/build on/contribute to the dataset, feel free to contact us via Github or E-mail (<zeyaoma@ruc.edu.cn>, <zbhmint@bit.edu.cn>).
