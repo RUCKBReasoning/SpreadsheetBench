@@ -133,7 +133,7 @@ You need to modify the setting (single, multi_react_exec, multi_row_exec, or mul
 
 We thanks the [code-act](https://github.com/xingyaoww/code-act) team for providing the code execution environment.
 
-## Lisence and Citation
+## License and Citation
 
 The project is hosted with the [CC BY SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) License.
 
