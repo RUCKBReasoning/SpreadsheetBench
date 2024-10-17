@@ -1,4 +1,4 @@
-# SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation
+# [NeurIPS 2024] SpreadsheetBench: Towards Challenging Real World Spreadsheet Manipulation
 
 [Homepage](https://spreadsheetbench.github.io/) · [Paper](https://arxiv.org/abs/2406.14991) · [Data](https://github.com/RUCKBReasoning/SpreadsheetBench/tree/main/data)
 
@@ -8,7 +8,9 @@ SpreadsheetBench is a challenging spreadsheet manipulation benchmark that (1) co
 
 ## News
 
-[2024/07] 🔥 Our paper was published on [arxiv](https://arxiv.org/abs/2406.14991).
+[2024/09] 🔥 SpreadsheetBench has been accepted at NeurIPS D&B Track 2024 as a spotlight.
+
+[2024/07] 📑 Our paper was published on [arxiv](https://arxiv.org/abs/2406.14991).
 
 [2024/06] 📦 We released the code for model inference and evaluation.
 
