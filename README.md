@@ -8,6 +8,8 @@ SpreadsheetBench is a challenging spreadsheet manipulation benchmark that (1) co
 
 ## News
 
+[2025/04] We open-source all 912 questions and related spreadsheet files. Check the data in `data/all_data_912.tar.gz`
+
 [2024/09] 🔥 SpreadsheetBench has been accepted at NeurIPS D&B Track 2024 as a spotlight.
 
 [2024/07] 📑 Our paper was published on [arxiv](https://arxiv.org/abs/2406.14991).
