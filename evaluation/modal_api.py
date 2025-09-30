@@ -26,20 +26,30 @@ image = (
 @modal.web_endpoint(method="POST")
 def evaluate_spreadsheet(request_data: dict):
     """
-    API endpoint to evaluate a spreadsheet file against ground truth.
+    API endpoint to evaluate spreadsheet files against ground truth.
 
     Expected request format:
     {
         "id": "spreadsheet_id",
-        "file_blob": "base64_encoded_xlsx_file"
+        "outputs": {
+            "0": "base64_encoded_xlsx_file_for_test_case_1",
+            "1": "base64_encoded_xlsx_file_for_test_case_2",
+            "2": "base64_encoded_xlsx_file_for_test_case_3"
+        }
     }
+
+    Note: You can omit test cases if outputs are not available.
 
     Returns:
     {
         "success": bool,
-        "result": bool or None,
-        "message": str,
-        "id": str
+        "result": bool,  # True if hard_restriction == 1
+        "id": str,
+        "instruction_type": str,
+        "test_case_results": [bool, bool, bool],  # None for missing outputs
+        "soft_restriction": float,  # percentage of available tests that passed
+        "hard_restriction": int,  # 1 if all available tests passed, 0 otherwise
+        "messages": [str, str, str]
     }
     """
     import base64
@@ -52,13 +62,21 @@ def evaluate_spreadsheet(request_data: dict):
     # Parse request
     try:
         spreadsheet_id = request_data.get("id")
-        file_blob = request_data.get("file_blob")
+        outputs = request_data.get("outputs")
 
-        if not spreadsheet_id or not file_blob:
+        if not spreadsheet_id:
             return {
                 "success": False,
                 "result": None,
-                "message": "Missing required parameters: 'id' and 'file_blob' are required",
+                "message": "Missing required parameter: 'id'",
+                "id": None,
+            }
+
+        if not outputs or not isinstance(outputs, dict):
+            return {
+                "success": False,
+                "result": None,
+                "message": "Missing or invalid 'outputs' parameter. Expected a dict with keys '0', '1', '2'",
                 "id": spreadsheet_id,
             }
 
@@ -82,49 +100,83 @@ def evaluate_spreadsheet(request_data: dict):
                 "id": spreadsheet_id,
             }
 
-        # Decode base64 file blob
-        file_bytes = base64.b64decode(file_blob)
+        # Evaluate each provided test case
+        test_case_results = [None, None, None]
+        messages = ["", "", ""]
+        temp_files = []
 
-        # Create temporary file for the uploaded spreadsheet
-        with tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False) as temp_file:
-            temp_file.write(file_bytes)
-            temp_file_path = temp_file.name
+        try:
+            for test_case_idx in range(3):
+                test_case_key = str(test_case_idx)
 
-        # Evaluate against all 3 test cases
-        test_case_results = []
-        messages = []
+                if test_case_key not in outputs:
+                    test_case_results[test_case_idx] = None
+                    messages[test_case_idx] = (
+                        f"Test case {test_case_idx + 1}: Not provided"
+                    )
+                    continue
 
-        for test_case_idx in range(3):
-            gt_path = f"{dataset_path}/spreadsheet/{spreadsheet_id}/{test_case_idx + 1}_{spreadsheet_id}_answer.xlsx"
+                # Decode base64 file blob
+                try:
+                    file_bytes = base64.b64decode(outputs[test_case_key])
+                except Exception as e:
+                    test_case_results[test_case_idx] = False
+                    messages[test_case_idx] = (
+                        f"Test case {test_case_idx + 1}: Error decoding base64 - {str(e)}"
+                    )
+                    continue
 
-            if not os.path.exists(gt_path):
-                test_case_results.append(False)
-                messages.append(
-                    f"Test case {test_case_idx + 1}: Ground truth file not found"
-                )
-                continue
+                # Create temporary file for the uploaded spreadsheet
+                temp_file = tempfile.NamedTemporaryFile(suffix=".xlsx", delete=False)
+                temp_file.write(file_bytes)
+                temp_file.close()
+                temp_files.append(temp_file.name)
 
-            try:
+                # Get ground truth file path for this test case
+                gt_path = f"{dataset_path}/spreadsheet/{spreadsheet_id}/{test_case_idx + 1}_{spreadsheet_id}_answer.xlsx"
+
+                if not os.path.exists(gt_path):
+                    test_case_results[test_case_idx] = False
+                    messages[test_case_idx] = (
+                        f"Test case {test_case_idx + 1}: Ground truth file not found"
+                    )
+                    continue
+
                 # Compare workbooks
-                result, message = compare_workbooks(
-                    gt_path,
-                    temp_file_path,
-                    data_entry["instruction_type"],
-                    data_entry["answer_position"],
-                )
-                test_case_results.append(bool(result))
-                messages.append(f"Test case {test_case_idx + 1}: {message}")
-            except Exception as e:
-                test_case_results.append(False)
-                messages.append(f"Test case {test_case_idx + 1}: Error - {str(e)}")
+                try:
+                    result, message = compare_workbooks(
+                        gt_path,
+                        temp_file.name,
+                        data_entry["instruction_type"],
+                        data_entry["answer_position"],
+                    )
+                    test_case_results[test_case_idx] = bool(result)
+                    messages[test_case_idx] = (
+                        f"Test case {test_case_idx + 1}: {message}"
+                        if message
+                        else f"Test case {test_case_idx + 1}: Match"
+                    )
+                except Exception as e:
+                    test_case_results[test_case_idx] = False
+                    messages[test_case_idx] = (
+                        f"Test case {test_case_idx + 1}: Error - {str(e)}"
+                    )
 
-        # Clean up temporary file
-        if os.path.exists(temp_file_path):
-            os.unlink(temp_file_path)
+        finally:
+            # Clean up all temporary files
+            for temp_file_path in temp_files:
+                if os.path.exists(temp_file_path):
+                    os.unlink(temp_file_path)
 
-        # Calculate scores
-        soft_restriction = test_case_results.count(True) / len(test_case_results)
-        hard_restriction = 0 if False in test_case_results else 1
+        # Calculate scores (matching evaluation.py logic)
+        # In evaluation.py, missing files count as failures (0)
+        # So we convert None to False for scoring
+        scoring_results = [r if r is not None else False for r in test_case_results]
+
+        # soft_restriction: always divide by 3 (total test cases)
+        # hard_restriction: 1 only if all 3 test cases pass
+        soft_restriction = scoring_results.count(True) / 3
+        hard_restriction = 0 if False in scoring_results else 1
 
         return {
             "success": True,
