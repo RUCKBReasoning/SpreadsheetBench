@@ -88,7 +88,7 @@ def evaluate_spreadsheet(request_data: dict):
         # Find the data entry for this ID
         data_entry = None
         for data in dataset:
-            if data["id"] == spreadsheet_id:
+            if str(data["id"]) == spreadsheet_id:
                 data_entry = data
                 break
 
