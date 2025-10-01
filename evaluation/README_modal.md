@@ -7,7 +7,7 @@ This Modal app provides an API endpoint for evaluating spreadsheet files against
 Deploy the Modal app **from the project root directory**:
 
 ```bash
-modal deploy evaluation/modal_api.py
+modal deploy evaluation/modal_api.py --env benchmark
 ```
 
 ## Verification
