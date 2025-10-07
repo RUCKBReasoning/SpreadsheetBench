@@ -3,6 +3,9 @@
 __pycache__
 
 data/sample_data_200
+data/all_data_912
 
 inference/outputs/*
 inference/log/*
+
+outputs
