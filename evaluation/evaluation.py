@@ -120,7 +120,7 @@ def generate_cell_names(range_str):
     return cell_names
 
 
-def cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range, is_CF):
+def cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range):
     if sheet_name not in wb_proc:
         return False, "worksheet not found"
     ws_gt = wb_gt[sheet_name]
@@ -137,17 +137,16 @@ def cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range, is_CF):
                     ws_proc has {cell_proc.value}"
             return False, msg
         
-        if is_CF:
-            if not compare_fill_color(cell_gt.fill, cell_proc.fill):
-                msg = f"Fill color difference at cell {cell_gt.coordinate}: ws_gt has {cell_gt.fill.fgColor.rgb},\
-                        ws_proc has {cell_proc.fill.fgColor.rgb}"
-                return False, msg
+        if not compare_fill_color(cell_gt.fill, cell_proc.fill):
+            msg = f"Fill color difference at cell {cell_gt.coordinate}: ws_gt has {cell_gt.fill.fgColor.rgb},\
+                    ws_proc has {cell_proc.fill.fgColor.rgb}"
+            return False, msg
 
-            if not compare_font_color(cell_gt.font, cell_proc.font):
-                # msg = f"Font color difference at cell {cell_gt.coordinate}: ws_gt has {cell_gt.font.color.rgb},\
-                #        ws_proc has {cell_proc.font.color.rgb}"
-                msg = f"Font color difference at cell {cell_gt.coordinate}"
-                return False, msg
+        if not compare_font_color(cell_gt.font, cell_proc.font):
+            # msg = f"Font color difference at cell {cell_gt.coordinate}: ws_gt has {cell_gt.font.color.rgb},\
+            #        ws_proc has {cell_proc.font.color.rgb}"
+            msg = f"Font color difference at cell {cell_gt.coordinate}"
+            return False, msg
 
     print("Cell values in the specified range are identical.")
     return True, ""
@@ -157,10 +156,6 @@ def compare_workbooks(gt_file, proc_file, instruction_type, answer_position):
     if not os.path.exists(proc_file):
         return False, "File not exist"
     # Open workbooks
-    if "CF" in proc_file:
-        is_CF = True
-    else:
-        is_CF = False
     try:
         wb_gt = openpyxl.load_workbook(filename=gt_file, data_only=True)
         wb_proc = openpyxl.load_workbook(filename=proc_file, data_only=True)
@@ -186,7 +181,7 @@ def compare_workbooks(gt_file, proc_file, instruction_type, answer_position):
         sheet_name = sheet_name.lstrip("'").rstrip("'")
         cell_range = cell_range.lstrip("'").rstrip("'")
 
-        result, msg = cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range, is_CF)
+        result, msg = cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range)
         result_list.append(result)
         msg_list.append(msg)
 
@@ -216,7 +211,8 @@ def evaluation(opt):
         test_case_results = []
         for test_case_idx in range(3):
             gt_path = f"{dataset_path}/spreadsheet/{data['id']}/{test_case_idx + 1}_{data['id']}_answer.xlsx"
-            proc_path = f"{dataset_path}/outputs/{opt.setting}_{opt.model}/{test_case_idx + 1}_{data['id']}_output.xlsx"
+            proc_path = f"{dataset_path}/spreadsheet/{data['id']}/{test_case_idx + 1}_{data['id']}_input.xlsx"
+            # proc_path = f"{dataset_path}/outputs/{opt.setting}_{opt.model}/{test_case_idx + 1}_{data['id']}_output.xlsx"
             try:
                 result, _ = compare_workbooks(gt_path, proc_path, data['instruction_type'], data['answer_position'])
             except:
