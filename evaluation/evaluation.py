@@ -152,7 +152,6 @@ def cell_level_compare(wb_gt, wb_proc, sheet_name, cell_range):
         #     msg = f"Font color difference at cell {cell_gt.coordinate}"
         #     return False, msg
 
-    print("Cell values in the specified range are identical.")
     return True, ""
 
 
