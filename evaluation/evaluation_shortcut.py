@@ -1,17 +1,3 @@
-"""Evaluate spreadsheet benchmark results from a specific run.
-
-This script compares generated spreadsheet outputs against ground truth answers
-for a given test run (1, 2, or 3) from a timestamped results folder.
-
-Examples:
-    Evaluate run 1 results:
-        python evaluation_shortcut.py --results_folder /Users/pwang/Desktop/benchmark_20251010_022059_c8729401_results
-
-    Evaluate run 2 with custom dataset:
-        python evaluation_shortcut.py --dataset all_data_912 --results_folder <output_folder> --run 2
-
-"""
-
 import os
 import json
 import argparse
@@ -117,7 +103,6 @@ def evaluation(opt):
 
     # Save results
     folder_name = os.path.basename(opt.results_folder)
-    os.makedirs("../outputs", exist_ok=True)
     output_path = f"../outputs/eval_{folder_name}_run{opt.run}.json"
 
     with open(output_path, "w") as fp:
