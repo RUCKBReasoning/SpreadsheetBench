@@ -1,0 +1,1412 @@
+{
+  "summary": {
+    "total_spreadsheets": 912,
+    "api_calls_made": 912,
+    "skipped_no_input_files": 0,
+    "total_problematic_cases": 175,
+    "affected_spreadsheets": 67,
+    "description": "Cases where input files incorrectly pass validation as answer files"
+  },
+  "problematic_cases": [
+    {
+      "id": "13-1",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "A3:D32",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "13-1",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "A3:D32",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "13-1",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "A3:D32",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "23-28",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "SH2'!A5:D10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "53-12",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "B1:C13",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "263-1",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "H2:H4",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "298-22",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "E2:E6",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "430-43",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "data1'!A1:B5,'data2'!A1:B5,'data3'!A1:B5",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "430-43",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "data1'!A1:B5,'data2'!A1:B5,'data3'!A1:B5",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "430-43",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "data1'!A1:B5,'data2'!A1:B5,'data3'!A1:B5",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "68-47",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'2023'!A6:I140",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "68-47",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'2023'!A6:I140",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "68-47",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'2023'!A6:I140",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "73-45",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!BD2:308",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "73-45",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!BD2:308",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "73-45",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!BD2:308",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "85-38",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'SwiftMD'!B3:O14",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "99-24",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Vendor!'A1:D101,'NotPaid!'A1:D7,'Paid!'A1:D43'",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "105-13",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Calculation!'C11:I490'",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "127-32",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Example Data Set'!A1:A10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "139-16",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Import Data'!A13:C14",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "139-16",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Import Data'!A13:C14",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "189-9",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:D613",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "189-9",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:D613",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "203-33",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C4:C20",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "203-33",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C4:C20",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "203-33",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C4:C20",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "207-25",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:D87",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "207-25",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:D87",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "207-25",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:D87",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "212-40",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:H18",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "234-30",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:B54",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "234-30",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:B54",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "234-30",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:B54",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "7-5",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D5:AO5",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "7-5",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D5:AO5",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "7-5",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D5:AO5",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "110-2",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:C13",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "110-2",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:C13",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "110-2",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A1:C13",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "131-38",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:D10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "131-38",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:D10",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "131-38",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:D10",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "248-48",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Ref Program Names (3)'!A9:D9",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "248-48",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Ref Program Names (3)'!A9:D9",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "395-48",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D1:D93",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "395-48",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D1:D93",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "395-48",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D1:D93",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "448-11",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:J16",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "477-40",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Blad3'!C2:C4",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "477-40",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Blad3'!C2:C4",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "477-40",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Blad3'!C2:C4",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "493-5",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Imported Data'!A1:F10",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "495-31",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Results'!A1:B8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "495-31",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Results'!A1:B8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "495-31",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Results'!A1:B8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "534-40",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Headlines'!A2:D16",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "534-40",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Headlines'!A2:D16",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "534-40",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Headlines'!A2:D16",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "570-43",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A2:H2",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "570-43",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A2:H2",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "570-43",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A2:H2",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "575-15",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'ENTRY'!E10:E86",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "575-15",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'ENTRY'!E10:E86",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "575-15",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'ENTRY'!E10:E86",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_357",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:I10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_357",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:I10",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_357",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:I10",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_513",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:H44",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_513",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:H44",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_513",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:H44",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_2919",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:G7",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_2919",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:G7",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_2919",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:G7",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_3575",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Example'!F7:AW18",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_3575",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Example'!F7:AW18",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_3575",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Example'!F7:AW18",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_3712",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Purchases'!M3:M5",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_3712",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Purchases'!M3:M5",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_4909",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F9:K25",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_4909",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F9:K25",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_4909",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F9:K25",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_6540",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F7:CG96",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_6540",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F7:CG96",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_6540",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F7:CG96",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7349",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:Q16",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7349",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:Q16",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7349",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D2:Q16",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7938",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C8:I8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7938",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C8:I8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_7938",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C8:I8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8276",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Data'!E2:E8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8276",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Data'!E2:E8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8276",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Data'!E2:E8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8830",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B2:B8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8830",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B2:B8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_8830",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B2:B8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_9945",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A3:G3",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_9945",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A3:G3",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_9945",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A3:G3",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_10214",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!C2:C10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_10214",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!C2:C10",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_10214",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!C2:C10",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11072",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E3:F12",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11072",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E3:F12",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11072",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E3:F12",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11177",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A1040",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11177",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A1040",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_11177",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A1040",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12196",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G6",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12196",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G6",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12196",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G6",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12429",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:C8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12429",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:C8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12429",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:C8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12518",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:B19",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12518",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:B19",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_12518",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B1:B19",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13024",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Leave_Record'!G7:AK34",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13024",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Leave_Record'!G7:AK34",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13024",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Leave_Record'!G7:AK34",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13984",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:E6",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13984",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:E6",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13984",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:E6",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13993",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3:R8",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13993",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3:R8",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_13993",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3:R8",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15439",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E4:j11",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15439",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E4:j11",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15439",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E4:j11",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15571",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:C4284",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15571",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:C4284",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_15571",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C2:C4284",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_16840",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:C17",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_16840",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:C17",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_16840",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:C17",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_17940",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F3:K22",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_17940",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F3:K22",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_17940",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!F3:K22",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18814",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'attendance-Dec'!C3:AG4",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18814",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'attendance-Dec'!C3:AG4",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18814",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'attendance-Dec'!C3:AG4",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18989",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A20000",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18989",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A20000",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_18989",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A20000",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_19190",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Summary'!A3:H3",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_19190",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Summary'!A3:H3",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_19190",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Summary'!A3:H3",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21040",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B4:AF7",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21040",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B4:AF7",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21040",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B4:AF7",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21524",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A16",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21524",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A16",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_21524",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!A2:A16",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_22493",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Money In Checking'!R2:R59",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_22493",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Money In Checking'!R2:R59",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_22493",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Money In Checking'!R2:R59",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24632",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:HR11",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24632",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:HR11",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24632",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!E2:HR11",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24784",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D6:N17",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24784",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D6:N17",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_24784",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D6:N17",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26100",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3,D10",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26100",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3,D10",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26100",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!D3,D10",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26944",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A1:A15",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26944",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A1:A15",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_26944",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet2'!A1:A15",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_28766",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G14",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_28766",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G14",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_28766",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!C3:G14",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_29431",
+      "test_case": 1,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:B43",
+      "comparison_message": "Test case 1: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_29431",
+      "test_case": 2,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:B43",
+      "comparison_message": "Test case 2: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    },
+    {
+      "id": "CF_29431",
+      "test_case": 3,
+      "instruction_type": "Sheet-Level Manipulation",
+      "answer_position": "'Sheet1'!B3:B43",
+      "comparison_message": "Test case 3: Match",
+      "issue": "Input file incorrectly passes as answer file"
+    }
+  ]
+}
