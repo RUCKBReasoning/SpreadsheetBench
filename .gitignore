@@ -9,3 +9,4 @@ inference/outputs/*
 inference/log/*
 
 outputs
+/data_copy
