@@ -6,3 +6,5 @@ openai==1.30.4
 docker==7.1.0
 numpy==1.22.2
 vllm
+python-dotenv
+boto3
