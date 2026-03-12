@@ -1,9 +1,114 @@
+"""
+Open and recalculate spreadsheet files so that formula values are cached,
+enabling openpyxl to read computed values with data_only=True.
+
+Cross-platform: uses LibreOffice (macOS/Linux) or win32com+Excel (Windows).
+
+Usage:
+    python open_spreadsheet.py --dir_path /path/to/spreadsheets
+
+    # To force a specific backend:
+    python open_spreadsheet.py --dir_path /path/to/spreadsheets --backend libreoffice
+    python open_spreadsheet.py --dir_path /path/to/spreadsheets --backend win32com
+
+    # To specify a custom LibreOffice path:
+    python open_spreadsheet.py --dir_path /path/to/spreadsheets --soffice /path/to/soffice
+
+Requirements (one of):
+    - LibreOffice 7.5+ (macOS: brew install --cask libreoffice, Linux: apt install libreoffice-calc)
+    - Windows with Microsoft Excel and pywin32 installed (pip install pywin32)
+"""
+
 import os
+import sys
+import shutil
 import argparse
-from win32com.client import Dispatch
+import subprocess
+import tempfile
+import platform
 
 
-def just_open(filename):
+# ---- LibreOffice backend (macOS / Linux / Windows) ----
+
+def find_libreoffice():
+    """Locate the LibreOffice binary."""
+    candidates = [
+        "libreoffice",
+        "soffice",
+        "/Applications/LibreOffice.app/Contents/MacOS/soffice",  # macOS
+    ]
+    for candidate in candidates:
+        path = shutil.which(candidate)
+        if path:
+            return path
+        if os.path.isfile(candidate):
+            return candidate
+    return None
+
+
+def just_open_libreoffice(filename, soffice_path):
+    """
+    Open an xlsx/xls file in LibreOffice Calc headlessly, which triggers
+    formula recalculation, then save it back as xlsx so that openpyxl
+    can read the cached computed values with data_only=True.
+    """
+    filename = os.path.abspath(filename)
+    if not os.path.isfile(filename):
+        print(f"File not found: {filename}")
+        return False
+
+    original_dir = os.path.dirname(filename)
+    basename = os.path.basename(filename)
+    name, ext = os.path.splitext(basename)
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        try:
+            result = subprocess.run(
+                [
+                    soffice_path,
+                    "--headless",
+                    "--calc",
+                    "--convert-to", "xlsx:Calc MS Excel 2007 XML",
+                    "--outdir", tmpdir,
+                    filename,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
+
+            if result.returncode != 0:
+                print(f"LibreOffice error for {basename}: {result.stderr.strip()}")
+                return False
+
+            converted = os.path.join(tmpdir, name + ".xlsx")
+            if not os.path.isfile(converted):
+                print(f"Converted file not found for {basename}")
+                return False
+
+            dest = os.path.join(original_dir, name + ".xlsx")
+            shutil.move(converted, dest)
+
+            # If the original was .xls (not .xlsx), remove the old file
+            if ext.lower() == ".xls":
+                os.remove(filename)
+
+            return True
+
+        except subprocess.TimeoutExpired:
+            print(f"Timeout processing: {basename}")
+            return False
+        except Exception as e:
+            print(f"Error processing {basename}: {e}")
+            return False
+
+
+# ---- win32com backend (Windows only) ----
+
+def just_open_win32com(filename):
+    """Open and save a spreadsheet using Excel COM automation (Windows only)."""
+    from win32com.client import Dispatch
+
     filename = os.path.abspath(filename)
     xlApp = Dispatch("Excel.Application")
     xlApp.Visible = False
@@ -13,37 +118,99 @@ def just_open(filename):
         xlBook = xlApp.Workbooks.Open(Filename=filename, UpdateLinks=False, ReadOnly=False)
         xlBook.Save()
         xlBook.Close(SaveChanges=True)
+        return True
     except Exception as e:
         print(f"An error occurred: {e}")
+        return False
     finally:
         xlApp.Quit()
 
 
-def open_all_spreadsheet_in_dir(dir_path):
+# ---- Shared logic ----
+
+def open_all_spreadsheet_in_dir(dir_path, backend, soffice_path=None):
     if not os.path.isdir(dir_path):
         print(f"Not a valid dir path: {dir_path}")
         return
 
-    # 支持的扩展名
     supported_extensions = {'.xlsx', '.xls'}
-    
-    # 遍历目录中的所有文件
-    for filename in os.listdir(dir_path):
-        _, ext = os.path.splitext(filename)
-        if ext.lower() in supported_extensions:
-            full_path = os.path.join(dir_path, filename)
-            print(f"Processing: {full_path}")
-            just_open(full_path)
+    files = sorted(
+        f for f in os.listdir(dir_path)
+        if os.path.splitext(f)[1].lower() in supported_extensions
+    )
 
-    print("Finish processing all files")
+    if not files:
+        print(f"No spreadsheet files found in {dir_path}")
+        return
+
+    print(f"Found {len(files)} spreadsheet(s) to process using {backend} backend")
+    success = 0
+    failed = 0
+
+    for filename in files:
+        full_path = os.path.join(dir_path, filename)
+        print(f"Processing: {full_path}")
+        if backend == "libreoffice":
+            ok = just_open_libreoffice(full_path, soffice_path)
+        else:
+            ok = just_open_win32com(full_path)
+        if ok:
+            success += 1
+        else:
+            failed += 1
+
+    print(f"\nDone. {success} succeeded, {failed} failed out of {len(files)} files.")
+
+
+def detect_backend():
+    """Auto-detect the best available backend."""
+    if platform.system() == "Windows":
+        try:
+            from win32com.client import Dispatch
+            return "win32com"
+        except ImportError:
+            pass
+    soffice = find_libreoffice()
+    if soffice:
+        return "libreoffice"
+    if platform.system() == "Windows":
+        return "win32com"  # will fail with import error, but gives a clear message
+    return None
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser("command line arguments for open spreadsheets.")
-    
-    parser.add_argument('--dir_path', type=str, help='the dir path of spreadsheets')
-
+    parser = argparse.ArgumentParser(
+        description="Open and recalculate spreadsheets to cache formula values."
+    )
+    parser.add_argument('--dir_path', type=str, required=True,
+                        help='Directory containing spreadsheet files')
+    parser.add_argument('--backend', type=str, choices=['libreoffice', 'win32com'],
+                        default=None,
+                        help='Recalculation backend (auto-detected if omitted)')
+    parser.add_argument('--soffice', type=str, default=None,
+                        help='Path to LibreOffice binary (auto-detected if omitted)')
     opt = parser.parse_args()
 
-    open_all_spreadsheet_in_dir(opt.dir_path)
+    backend = opt.backend or detect_backend()
+    if backend is None:
+        print(
+            "ERROR: No recalculation backend found.\n"
+            "  Install LibreOffice (macOS: brew install --cask libreoffice, "
+            "Linux: apt install libreoffice-calc)\n"
+            "  Or on Windows, install pywin32: pip install pywin32"
+        )
+        sys.exit(1)
 
+    soffice_path = None
+    if backend == "libreoffice":
+        soffice_path = opt.soffice or find_libreoffice()
+        if not soffice_path:
+            print(
+                "ERROR: LibreOffice not found. Install it or pass --soffice /path/to/soffice\n"
+                "  macOS:  brew install --cask libreoffice\n"
+                "  Linux:  sudo apt install libreoffice-calc"
+            )
+            sys.exit(1)
+        print(f"Using LibreOffice: {soffice_path}")
+
+    open_all_spreadsheet_in_dir(opt.dir_path, backend, soffice_path)
